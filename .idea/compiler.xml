@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="2020-06-12" />
+        <module name="2020-06-21" />
+        <module name="MyBatis_Study_02" />
+        <module name="MyBatis_Study_01" />
+        <module name="MyBatis_Study_Dao" />
+        <module name="MyBatis_Study" />
+        <module name="spring-study" />
+        <module name="jdbcTemplent" />
+        <module name="2020-06-08" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="2020-06-08" target="1.8" />
+      <module name="2020-06-12" target="1.8" />
+      <module name="2020-06-21" target="1.8" />
+      <module name="2020_06_21" target="1.8" />
+      <module name="jdbcTemplent" target="1.8" />
+      <module name="MyBatis_Study" target="1.8" />
+      <module name="MyBatis_Study_01" target="1.8" />
+      <module name="MyBatis_Study_02" target="1.8" />
+      <module name="MyBatis_Study_Dao" target="1.8" />
+      <module name="spring-study" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="2020-06-12" options="-parameters" />
+    </option>
+  </component>
+</project>

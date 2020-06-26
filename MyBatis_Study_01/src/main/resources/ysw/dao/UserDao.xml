@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ysw.dao.UserDao">
+    <select id="findAll" resultType="ysw.domain.User">
+        select * from user;
+    </select>
+    <!--保存用户-->
+    <insert id="saveUser" parameterType="ysw.domain.User">
+        <!--配置插入操作后，获取插入数据的id-->
+        <selectKey keyProperty="id" keyColumn="id" resultType="Integer" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into user(username,birthday,sex,address)values(#{username},#{birthday},#{sex},#{address});
+    </insert>
+    <!--更新用户-->
+    <update id="updateUser" parameterType="ysw.domain.User">
+        update user set username=#{username},address=#{address},sex=#{sex},birthday=#{birthday} where id=#{id};
+    </update>
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="Integer">
+        delete from user where id=#{id};
+    </delete>
+    <!--根据id模糊查询用户信息-->
+    <select id="selectUserById" parameterType="Integer" resultType="ysw.domain.User">
+        select id,username,birthday,sex,address from user where id=#{id};
+    </select>
+    <!--根据名称模糊查询-->
+    <select id="selectUserByUserName" parameterType="String" resultType="ysw.domain.User">
+        select * from user where username like #{name};
+    </select>
+    <!--查询总记录条数-->
+    <select id="findTotal" resultType="Integer">
+        select count(id) from user;
+    </select>
+    <select id="findUserByCondition" resultType="ysw.domain.User" parameterType="ysw.domain.User">
+        select * from user
+        <where>
+            <if test="username!=null">
+                and username =#{username}
+            </if>
+            <if test="sex!=null">
+                and sex=#{sex}
+            </if>
+        </where>
+    </select>
+
+    <select id="findUserInList" resultType="ysw.domain.User" parameterType="ArrayList">
+        select * from user
+        <where>
+            <if test="list!=null and list.size()>0">
+                <foreach collection="list" open="and id in (" close=")" item="id" separator=",">
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

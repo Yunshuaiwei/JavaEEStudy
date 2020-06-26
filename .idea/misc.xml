@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/2020-06-08/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-study/pom.xml" />
+        <option value="$PROJECT_DIR$/../2020-06-12/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-study/2020_06_21/pom.xml" />
+        <option value="$PROJECT_DIR$/../2020-0621/pom.xml" />
+        <option value="$PROJECT_DIR$/../2020-06-21/pom.xml" />
+        <option value="$PROJECT_DIR$/jdbcTemplent/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyBatis_Study_01/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_Study/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_Study_01/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_Study_Dao/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_Study_02/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

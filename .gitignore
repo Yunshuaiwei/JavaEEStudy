@@ -1,0 +1,8 @@
+# Project exclude paths
+/2020-06-08/target/
+/jdbcTemplent/target/
+/MyBatis_Study/target/
+/MyBatis_Study_01/target/
+/MyBatis_Study_02/target/
+/MyBatis_Study_Dao/target/
+/spring-study/target/
