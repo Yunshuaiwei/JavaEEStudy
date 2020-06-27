@@ -3,6 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+    <settings>
+        <!--开启MyBatis支持延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
     <environments default="mysql">
         <!--配置mysql环境-->
         <environment id="mysql">
@@ -21,5 +27,4 @@
     <mappers>
         <package name="ysw.dao"></package>
     </mappers>
-    
 </configuration>

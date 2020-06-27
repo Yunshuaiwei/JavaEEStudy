@@ -47,6 +47,7 @@ public class AccountTest {
         List<Account> list = account.findAll();
         for (Account acc : list) {
             System.out.println(acc);
+            System.out.println(acc.getUser());
         }
     }
 

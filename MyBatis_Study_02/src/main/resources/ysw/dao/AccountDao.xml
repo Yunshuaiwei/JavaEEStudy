@@ -3,7 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ysw.dao.AccountDao">
-    <select id="findAll" resultType="ysw.domain.Account">
+    <!--定义封装account和user的resultMap-->
+    <resultMap id="accountUserMap" type="ysw.domain.Account">
+        <id property="id" column="id"></id>
+        <result property="uID" column="uID"></result>
+        <result property="money" column="money"></result>
+        <!--一对一的关系映射，配置封装user的内容；JavaType属性提示封装到哪个对象-->
+        <association property="user" column="uID" javaType="ysw.domain.User" select="ysw.dao.UserDao.selectUserById"></association>
+    </resultMap>
+
+    <select id="findAll" resultMap="accountUserMap">
         select * from account;
     </select>
 

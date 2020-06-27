@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="2020-06-12" />
+        <module name="MyBaties_Study_03" />
         <module name="2020-06-21" />
         <module name="MyBatis_Study_02" />
         <module name="MyBatis_Study_01" />
@@ -24,6 +25,7 @@
       <module name="2020-06-21" target="1.8" />
       <module name="2020_06_21" target="1.8" />
       <module name="jdbcTemplent" target="1.8" />
+      <module name="MyBaties_Study_03" target="1.8" />
       <module name="MyBatis_Study" target="1.8" />
       <module name="MyBatis_Study_01" target="1.8" />
       <module name="MyBatis_Study_02" target="1.8" />
