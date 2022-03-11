@@ -40,5 +40,6 @@
         生日:<input type="text" name="date"><br>
         <input type="submit" value="提交">
     </form>
+    <a href="param/testSessionAttributes">testSessionAttributes</a>
 </body>
 </html>

@@ -1,7 +1,9 @@
 package ysw.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import ysw.domain.Account;
 import ysw.domain.User;
 
@@ -11,6 +13,7 @@ import ysw.domain.User;
  * @Date 2020/7/1 9:45
  * @Version
  **/
+@SessionAttributes(value = {"msg"})
 @Controller
 @RequestMapping("/param")
 public class ParamController {
@@ -46,4 +49,9 @@ public class ParamController {
         return "success";
     }
 
+    @RequestMapping("/testSessionAttributes")
+    public String testSessionAttributes(Model model){
+        model.addAttribute("msg","hello");
+        return "success";
+    }
 }
