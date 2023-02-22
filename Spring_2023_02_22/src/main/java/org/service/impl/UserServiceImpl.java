@@ -1,9 +1,12 @@
 package org.service.impl;
 
-import org.dao.UserDao;
+import org.mapper.UserMapper;
+import org.pojo.User;
 import org.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author yunshuaiwei
@@ -13,10 +16,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    private UserDao userDao;
+    private UserMapper userMapper;
 
     @Override
     public void show(){
-        System.out.println(userDao);
+        List<User> all = userMapper.findAll();
+        for (User user : all) {
+            System.out.println(user);
+        }
     }
 }

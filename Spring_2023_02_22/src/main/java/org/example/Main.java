@@ -1,9 +1,8 @@
 package org.example;
 
+import org.config.SpringConfig;
 import org.service.impl.UserServiceImpl;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.sql.DataSource;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * @author yunshuaiwei
@@ -12,9 +11,14 @@ import javax.sql.DataSource;
  */
 public class Main {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserServiceImpl userServiceImpl = context.getBean(UserServiceImpl.class);
-        DataSource dataSource = (DataSource) context.getBean("dataSource");
-        System.out.println(dataSource);
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        UserServiceImpl userServiceImpl = context.getBean(UserServiceImpl.class);
+//        DataSource dataSource = (DataSource) context.getBean("dataSource");
+//        System.out.println(dataSource);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+        UserServiceImpl userService = context.getBean(UserServiceImpl.class);
+        userService.show();
+
+
     }
 }

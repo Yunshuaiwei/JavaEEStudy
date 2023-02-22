@@ -3,7 +3,6 @@ package org.beans;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 
@@ -12,7 +11,7 @@ import javax.sql.DataSource;
  * @version 1.0
  * @date 2023/2/22 14:18
  */
-@Component
+//@Component
 public class OtherBean {
 
     @Value("${jdbc.driver}")
