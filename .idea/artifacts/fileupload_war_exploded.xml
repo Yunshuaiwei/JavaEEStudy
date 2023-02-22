@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>fileupload</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -31,7 +30,7 @@
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
           <element id="library" level="project" name="Maven: org.webjars.npm:commist:1.0.0" />
           <element id="library" level="project" name="Maven: org.webjars.npm:leven:1.0.2" />
-          <element id="library" level="project" name="Maven: org.webjars.npm:minimist:1.2.5" />
+          <element id="library" level="project" name="Maven: org.webjars.npm:minimist:1.2.8" />
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.19.4" />
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19.4" />
           <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />

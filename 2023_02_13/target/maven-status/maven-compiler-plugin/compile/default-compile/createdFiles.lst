@@ -1,0 +1,10 @@
+org\utils\MyFactoryBean.class
+org\dao\UserDao.class
+org\pojo\User.class
+org\dao\impl\UserDaoImpl.class
+org\service\UserService.class
+org\example\Main.class
+org\utils\BeanFactory.class
+org\mapper\UserMapper.class
+org\service\impl\UserServiceImpl.class
+org\processor\MyBeanFactoryProcessor.class

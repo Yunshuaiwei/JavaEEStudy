@@ -3,6 +3,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/fileupload" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_Exception" />
@@ -31,8 +32,10 @@
         <option value="$PROJECT_DIR$/MyBatis_Study_Dao/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_Exception/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_Study_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_2023_02_22/pom.xml" />
+        <option value="$PROJECT_DIR$/2023_02_13/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
