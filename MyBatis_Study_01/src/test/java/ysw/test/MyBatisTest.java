@@ -129,7 +129,7 @@ public class MyBatisTest {
     //foreach标签测试
     @Test
     public void findInIdsTest(){
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList();
         list.add(2);
         list.add(3);
         list.add(5);

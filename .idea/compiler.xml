@@ -11,6 +11,7 @@
         <module name="jdbcTemplent" />
         <module name="2020-06-08" />
         <module name="MyBatis_Study" />
+        <module name="Spring_2023_02_24" />
         <module name="MyBatis_Study_02" />
         <module name="ssm" />
         <module name="springboot02" />
@@ -24,11 +25,11 @@
         <module name="springboot_jdbc (1)" />
         <module name="springboot_jdbc" />
         <module name="SpringMVC_Exception" />
-        <module name="2020_09_11" />
         <module name="SpringMVCDay02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="2020_09_11" target="1.5" />
       <module name="2020_12_07_SpringBoot" target="1.8" />
       <module name="springboot_jdbc" target="1.8" />
       <module name="springboot_jdbc (1)" target="1.8" />
@@ -37,6 +38,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="2020_12_07_SpringBoot" options="-parameters" />
+      <module name="Spring_2023_02_24" options="" />
       <module name="springboot02" options="-parameters" />
       <module name="springboot_jdbc" options="-parameters" />
       <module name="springboot_jdbc (1)" options="-parameters" />

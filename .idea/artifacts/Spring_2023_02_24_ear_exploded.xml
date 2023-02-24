@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Spring_2023_02_24:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_2023_02_24_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Spring_2023_02_24/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

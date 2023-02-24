@@ -6,6 +6,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/fileupload" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_2023_02_24" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_Exception" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_Study_day01" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVCDay02" />
@@ -16,7 +17,6 @@
       <list>
         <option value="$PROJECT_DIR$/ssm/pom.xml" />
         <option value="$PROJECT_DIR$/2020-06-08/pom.xml" />
-        <option value="$PROJECT_DIR$/2020_09_11/pom.xml" />
         <option value="$PROJECT_DIR$/fileupload/pom.xml" />
         <option value="$PROJECT_DIR$/jdbcTemplent/pom.xml" />
         <option value="$PROJECT_DIR$/spring-study/pom.xml" />
@@ -34,6 +34,7 @@
         <option value="$PROJECT_DIR$/SpringMVC_Study_day01/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_2023_02_22/pom.xml" />
         <option value="$PROJECT_DIR$/2023_02_13/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_2023_02_24/pom.xml" />
       </list>
     </option>
   </component>

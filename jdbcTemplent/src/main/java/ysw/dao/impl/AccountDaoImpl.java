@@ -29,7 +29,7 @@ public class AccountDaoImpl implements IAccountDao {
 
     @Override
     public Account findAccountByName(String accountName) {
-        List<Account> test = jdbcTemplate.query("select * from account where name=?", new BeanPropertyRowMapper<>(Account.class), "test");
+        List<Account> test = jdbcTemplate.query("select * from account where name=?", new BeanPropertyRowMapper(Account.class), "test");
         if (test.isEmpty()) {
             return null;
         }
