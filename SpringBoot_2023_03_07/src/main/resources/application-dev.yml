@@ -1,0 +1,42 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/localhost_test?serverTimezone=UTC
+      username: root
+      password: root
+  devtools:
+    restart:
+      # 不参与热部署的文件或文件夹配置
+      exclude: static/**
+      # 关闭热部署
+      enabled: false
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 日志相关配置
+logging:
+  group:
+    test: com.example.service,com.example.controller
+  level:
+    root: info
+    test: debug
+    com.example.dao: debug
+  # 设置日志格式
+#  pattern:
+#    console: "%d  %clr(%5p) ---- [%16t] %clr(%-40.40c) : %m %n"
+  logback:
+    rollingpolicy:
+      max-file-size: 3KB
+      file-name-pattern: logs\server.%d{yyyy-MM-dd}.%i.log
+  file:
+    name: logs\server.log
+
+

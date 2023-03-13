@@ -22,6 +22,7 @@
         <module name="spring-study" />
         <module name="fileupload" />
         <module name="SpringMVC_Study_day01" />
+        <module name="SpringBoot_2023_03_07" />
         <module name="MyBatis_Study_Dao" />
         <module name="MyBaties_Study_03" />
         <module name="Spring_2023_02_22" />
@@ -34,6 +35,7 @@
     <bytecodeTargetLevel>
       <module name="2020_09_11" target="1.5" />
       <module name="2020_12_07_SpringBoot" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="springboot_jdbc" target="1.8" />
       <module name="springboot_jdbc (1)" target="1.8" />
     </bytecodeTargetLevel>
@@ -42,7 +44,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="2020_12_07_SpringBoot" options="-parameters" />
       <module name="RabbitMQ_2023_03_6" options="-parameters" />
+      <module name="SpringBoot_2023_03_07" options="-parameters" />
       <module name="Spring_2023_02_24" options="" />
+      <module name="demo" options="-parameters" />
       <module name="springboot02" options="-parameters" />
       <module name="springboot_jdbc" options="-parameters" />
       <module name="springboot_jdbc (1)" options="-parameters" />
