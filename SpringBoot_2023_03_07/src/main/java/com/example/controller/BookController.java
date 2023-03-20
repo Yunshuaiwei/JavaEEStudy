@@ -5,6 +5,7 @@ import com.example.service.BookService;
 import com.example.utils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -42,6 +43,7 @@ public class BookController {
     }
 
     @GetMapping("{id}")
+    @Cacheable(value = "cacheSpace",key = "#id")
     public R getBookById(@PathVariable Integer id) {
         return new R(true, bookService.getById(id));
     }

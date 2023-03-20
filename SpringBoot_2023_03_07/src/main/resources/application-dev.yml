@@ -14,6 +14,14 @@ spring:
       exclude: static/**
       # 关闭热部署
       enabled: false
+  # 缓存配置
+  cache:
+    type: redis
+  redis:
+    port: 6379
+    host: 192.168.40.128
+
+
 mybatis-plus:
   global-config:
     db-config:
@@ -38,5 +46,4 @@ logging:
       file-name-pattern: logs\server.%d{yyyy-MM-dd}.%i.log
   file:
     name: logs\server.log
-
 

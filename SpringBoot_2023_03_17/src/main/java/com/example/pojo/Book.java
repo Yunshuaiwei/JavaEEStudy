@@ -1,11 +1,7 @@
 package com.example.pojo;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @author yunshuaiwei
@@ -14,12 +10,8 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @Builder
-@TableName("book")
-@AllArgsConstructor
-@NoArgsConstructor
-public class Book{
+public class Book {
 
-    @TableId
     private Integer id;
 
     private String type;
