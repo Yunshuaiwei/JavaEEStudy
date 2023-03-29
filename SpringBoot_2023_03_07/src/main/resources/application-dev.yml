@@ -20,8 +20,16 @@ spring:
   redis:
     port: 6379
     host: 192.168.40.128
-
-
+  # 邮箱相关配置
+#  mail:
+#    host: smtp.163.com
+#    username: 123456@163.com
+#    password: 123123
+  # SpringBootAdmin配置
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
 mybatis-plus:
   global-config:
     db-config:
@@ -42,8 +50,17 @@ logging:
 #    console: "%d  %clr(%5p) ---- [%16t] %clr(%-40.40c) : %m %n"
   logback:
     rollingpolicy:
-      max-file-size: 3KB
+      max-file-size: 10MB
       file-name-pattern: logs\server.%d{yyyy-MM-dd}.%i.log
   file:
     name: logs\server.log
-
+management:
+  endpoint:
+    health:
+      # 健康指标中的明细是否可以看到
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        # 启动所有监控信息
+        include: "*"
